@@ -1,0 +1,24 @@
+@import "../../styles/breakPoint.scss";
+.navbar {
+  .header {
+    min-height: 70px;
+    background-color: darkcyan;
+    &-content {
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__title {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        @include md{
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}

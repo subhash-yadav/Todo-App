@@ -1,0 +1,42 @@
+@import "./styles/breakPoint.scss";
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Blinker", sans-serif;
+  line-height: 1.4rem;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+  @include md {
+    max-width: 80%;
+  }
+  @include lg {
+    max-width: 85%;
+  }
+}
+.errorMessage {
+  color: red;
+}
+.undoBtn {
+  padding: 6px 10px;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: rgb(197, 70, 70);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  &:hover{
+    background-color: brown;
+  }
+  &:active{
+    background-color: rgb(121, 30, 30);
+  }
+
+}
